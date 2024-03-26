@@ -88,16 +88,58 @@ Mesela aynı piller ile yapılan seri ve paralel bağlı devrelerde seri bağlı
 
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/e6a5ba01-2c88-4c36-a40f-be21195a59b0" width="500">
 
+ledin uzun bacağı + kısa bacağı - dir. 
+pilin çıkıntılı yeri + düz yeri - dir.
+Cathode - Anode +
 
+## _8- RGB Led_
 
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/57079085-17a2-4973-8aab-fbe06f439613" width="200">
 
+* RGB Ledde farklı renkler elde edilebilecek devre örneği:
 
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/673e3021-77c5-4ad2-ab84-c32a8ef1aef8" width="600">
 
+## _9- DC Motor_
 
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/c52208e5-fe14-464a-b0a2-cbf975883031" width="200">
 
+* Mıknatıs ve Bobinin bir araya gelmesi ile oluşur.
+* Manyetik alanın, mıknatısın manyetik alanını itmesi-çekmesi sonucunda hareket oluşması esasına dayanır.
+* DC Motorun + veya - tarafı yoktur. İstendiği şekilde bağlanabilir. Tek fark biri saat yönünde diğeri saat yönünün tersine döndürür.
 
+## _10- Hobby Gearmotor (Redüktörlü Motor)_
 
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/937d5359-f156-4d2e-9dc2-e444f4add5d2" width="200">
 
+* Bu motorun alt tarafında da DC Motor vardır. DC motorun tüm özelliklerini taşır.
+* Üst tarafında ise bir dişli mekanizması vardır. Bu ise elde edilen hareketin daha yavaş ama daha güçlü olmasını sağlıyor.
+* Örneğin; engebeli bir arazide hareket edecek bir araç için bu motory kullanmalıyız.
 
+  ## _11- Servo Motor_
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/200ad1e4-25f1-4aa0-a8cf-01c0bf088a01" width="200">
+
+* Bu motorun içinde DC Motor vardır.
+* Açısal hareket yapabilen bir motordur.
+* 180 derece veya 360 derece çeşitleri bulunmaktadır.
+* Özellikle robotik teknolojisinde kullanılır. Robot kollarında, dronlarda,...
+* Servo motoru çalıştırabilmek için mutlaka ardunio'yu bağlamamız lazım çünkü açı bilgisi göndermemiz lazım.
+* + , - ve sinyal bağlantı noktaları vardır.
+* içindeki poatnsiyometre ile dönüş açısını alıyor ve ona göre dönüş açısını ayarlıyor. 
+
+  ## _12- Vibration Motor (Titreşim Motoru)_
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/4ecbf674-4248-47d9-b67d-033d30e5b8de" width="200">
+
+* Dönme hareketi değil titreşim hareketi yapar.
+
+  ## _13- Capacitor (Kondansatör)_
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/416779ef-4131-4ec0-a1af-6220cf743b79" width="200">
+
+* Elektrik enerjisini kısa süreli depolamaya yarayan bir alettir. Pil gibi düşünülebilir.
+* + ve - kutupları vardır.
+* Elektrik akımının dengesiz olduğu ortamlarda kullanılır. Buna regülasyon düzeltme deniyor.
 
 
