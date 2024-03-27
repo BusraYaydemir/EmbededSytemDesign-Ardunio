@@ -1,4 +1,4 @@
-# Ardunio ile uygulama alıştırmaları
+# _Ardunio ile uygulama alıştırmaları_
 
 ## Tüm Ledleri sırasıyla sağdan sola yakıp söndüren Ardunio uygulaması
 
@@ -40,6 +40,81 @@
 
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/5f9b681b-445f-46b4-9183-8d7afb0d8e85" width="450">
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/087d1473-3e2c-4f2e-a5e5-ebeae2a94a67" width="550">
+
+## Servo Motorun dönüş açısına göre led yakıp söndüren Ardunio uygulaması
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/0ed5ba01-cc63-4e54-9bd2-2350b416fdc7" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/ed640b00-5092-4eb4-a904-b15a70f195a3" width="550">
+
+## Relay SPDT(Single Pole Double Throw) ile Ampul yakıp söndüren Ardunio uygulaması
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/3b3a91d0-b177-498c-92bf-b64cfb8afd56" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/d5018fa2-0cac-4eca-bf02-36d095651f44" width="550">
+
+## Ultrasonic Distance Sensorü (HC-SR04) çalıştıran Ardunio uygulaması
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/c980a4e6-28ec-46a3-a937-f209e714d6e4" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/8681d4aa-9584-4c63-80b1-dd3e6e62b1c4" width="550">
+
+## RGB Ledde sırasıyla kırmızı-mavi-yeşil renklerini yakan Ardunio uygulaması
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/051238e1-8b73-4af3-ab32-35bb49f28989" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/709d6500-a01b-43c8-97f6-993dc372b826" width="550">
+
+## RGB Ledde sırasıyla tüm renklerini yakan Ardunio uygulaması
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/051238e1-8b73-4af3-ab32-35bb49f28989" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/206740c7-e045-4f33-bcdd-4c9185c7580c" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
+
+##  Ardunio uygulaması
+
+<img src="" width="450">
+<img src="" width="550">
 
 ##  Ardunio uygulaması
 
