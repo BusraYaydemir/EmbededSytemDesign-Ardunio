@@ -267,3 +267,162 @@ void loop()
     delay(50);
   }
 }
+
+/* Servo Motorun dönüş açısına göre led yakıp söndüren C++ kodu */
+
+#include <Servo.h>
+
+Servo myServo;
+int myServoControlPin = 3;
+
+void setup() {
+  myServo.attach(myServoControlPin);
+  for(int i = 4; i < 8; i++){
+  	pinMode(i, OUTPUT);
+  }
+}
+
+void loop() {
+  for(int angle = 0; angle < 180; angle++){
+  	myServo.write(angle);
+    angleSetting(angle);
+    delay(100);
+  }
+  for(int angle = 180; angle >= 0; angle--){
+  	myServo.write(angle);
+    angleSetting(angle);
+    delay(100);
+  }
+}
+
+void angleSetting(int angle){
+  if(angle >= 0 && angle < 45)
+      controlLed(1,0,0,0);
+    else if (angle >= 45 && angle < 90)
+      controlLed(1,1,0,0);
+    else if (angle >= 90 && angle < 135)
+      controlLed(1,1,1,0);
+    else if (angle >= 135 && angle < 180)
+      controlLed(1,1,1,1);
+}
+
+void controlLed(int a, int b, int c, int d) {
+  digitalWrite(4, a);
+  digitalWrite(5, b);
+  digitalWrite(6, c);
+  digitalWrite(7, d);
+}
+
+/* Relay SPDT(Single Pole Double Throw) ile Ampul yakıp söndüren C++ kodu */
+
+#define control_pin 9
+
+void setup()
+{
+  pinMode(control_pin, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(control_pin, HIGH);
+  delay(1000); 
+  digitalWrite(control_pin, LOW);
+  delay(1000); 
+}
+
+/* Ultrasonic Distance Sensorü (HC-SR04) çalıştıran C++ kodu */
+
+#define trig 6
+#define echo 5
+
+void setup() {
+  pinMode(echo, INPUT);
+  pinMode(trig, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+  
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(2);
+  
+  digitalWrite(trig, LOW);
+  
+  long time = pulseIn(echo, HIGH);
+  long distance = time * 0.01715;
+  Serial.print("Distance: ");
+  Serial.println(distance);
+  delay(500);
+}
+
+/* RGB Ledde sırasıyla kırmızı-mavi-yeşil renklerini yakan C++ kodu */
+
+#define red 8
+#define blue 7
+#define green 6
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+
+void loop()
+{
+  
+  digitalWrite(red,1);
+  delay(1000);
+  digitalWrite(red,0);
+  
+  digitalWrite(green,1);
+  delay(1000);
+  digitalWrite(green,0);
+  
+  digitalWrite(blue,1);
+  delay(1000);
+  digitalWrite(blue,0);
+}
+
+/* RGB Ledde sırasıyla tüm renklerini yakan C++ kodu */
+
+#define green 3
+#define blue 5
+#define red 6
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(red,0);
+  digitalWrite(green,0);
+  digitalWrite(blue,0);
+  
+  for(int i=0;i<256;i++){
+    
+   analogWrite(red,i);
+   delay(20);
+  }
+  
+  digitalWrite(red,0);
+  
+  for(int i=0;i<256;i++){
+    
+   analogWrite(blue,i);
+   delay(20);
+  }
+  digitalWrite(blue,0);
+  
+  for(int i=0;i<256;i++){
+    
+   analogWrite(green,i);
+   delay(20);
+  }
+}
