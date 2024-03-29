@@ -426,3 +426,90 @@ void loop()
    delay(20);
   }
 }
+
+
+/*
+Potansiyometreye göre servo motoru döndürme
+*/
+
+
+// C++ code
+//
+#include <Servo.h>
+
+#define pot A1
+int value;
+float voltage;
+Servo myServo;
+int myServoControlPin = 13;
+int angle;
+
+void setup()
+{
+  pinMode(pot, INPUT);
+  Serial.begin(9600);
+  myServo.attach(myServoControlPin);
+}
+
+void loop()
+{
+  value = analogRead(pot);
+  Serial.print("The Value: ");
+  Serial.println(value);
+  voltage = ((float)value/1023)*5;
+  Serial.print("The Voltage: ");
+  Serial.println(voltage);
+  Serial.println();
+  angle = ((float)value * 180)/1024;
+  myServo.write(angle);
+  delay(500);
+}
+
+
+/*
+mesafe sensörüne göre RGB de renk değiştirme
+*/
+
+#define trig 13
+#define echo 12
+#define red 11
+#define blue 10
+#define green 9
+
+void setup() {
+  pinMode(echo, INPUT);
+  pinMode(trig, OUTPUT);
+  Serial.begin(9600);
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+  
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(2);
+  
+  digitalWrite(trig, LOW);
+  
+  long time = pulseIn(echo, HIGH);
+  long distance = time * 0.01715;
+  Serial.print("Distance: ");
+  Serial.println(distance);
+  
+  if(distance >= 0 && distance <= 70) {
+    ledControl(1,0,0);
+  } else if(distance >= 71 && distance <= 140){
+  	ledControl(0,0,1);
+  } else if(distance >= 141 && distance <= 200){
+  	ledControl(0,1,0);
+  }
+  delay(500);
+}
+void ledControl(int a, int b, int c) {
+  digitalWrite(red, a);
+  digitalWrite(blue, b);
+  digitalWrite(green, c);
+}
