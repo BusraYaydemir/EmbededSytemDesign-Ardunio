@@ -96,10 +96,10 @@
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/8035250d-9467-4a1c-9ff3-649f10830b6c" width="450">
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/cb6e8fc2-5784-495a-853b-542a278a10ad" width="550">
 
-##  Ardunio uygulaması
+## Push Button ile basarken soldan sağa basmıyorken sağdan sola akan Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/a588e422-9550-42dd-9e3d-b4dd548d3889" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/4ff5afaa-b5dd-48c8-9502-5abc90e3632a" width="550">
 
 ##  Ardunio uygulaması
 
