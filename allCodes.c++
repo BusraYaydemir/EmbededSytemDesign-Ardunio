@@ -428,13 +428,8 @@ void loop()
 }
 
 
-/*
-Potansiyometreye göre servo motoru döndürme
-*/
+/* Potansiyometreye göre servo motoru döndüren C++ kodu */
 
-
-// C++ code
-//
 #include <Servo.h>
 
 #define pot A1
@@ -466,9 +461,7 @@ void loop()
 }
 
 
-/*
-mesafe sensörüne göre RGB de renk değiştirme
-*/
+/* Mesafe sensörüne göre RGB de renk değiştiren C++ kodu */
 
 #define trig 13
 #define echo 12
@@ -512,4 +505,143 @@ void ledControl(int a, int b, int c) {
   digitalWrite(red, a);
   digitalWrite(blue, b);
   digitalWrite(green, c);
+}
+
+
+/* Remote Control C++ kodu */
+
+#include <IRremote.h>
+
+int receiver_pin = 10;
+IRrecv receiver(receiver_pin);
+decode_results results;
+
+void setup()
+{
+  Serial.begin(9600);
+  receiver.enableIRIn();
+}
+
+void loop()
+{
+  if(receiver.available()){
+    if(receiver.decode(&results)) {
+    int command = receiver.decodedIRData.command;
+    Serial.println(command);
+    delay(500);
+    }
+  }
+  receiver.resume();
+}
+
+/*Remote Controlde basılan tuşa göre led yakıp söndüren C++ kodu */
+
+#include<IRremote.h>
+
+int receiver_pin=10;
+int led_1=7;
+int led_2=6;
+int led_3=5;
+
+IRrecv receiver(receiver_pin);
+
+decode_results results;
+
+void setup()
+{
+  Serial.begin(9600);
+  //Make the receiver enabled...
+  receiver.enableIRIn(); 
+}
+
+void loop()
+{
+  //If any command has been sent from the transmitter
+  if(receiver.available())
+    {
+        if(receiver.decode(&results)){
+          //Read the command (button) and assign it to a variable...
+          int command=receiver.decodedIRData.command; 
+          Serial.println(command);
+          if(command==69){
+            digitalWrite(led_1,1);
+            digitalWrite(led_2,0);
+            digitalWrite(led_3,0);
+          }else if(command==70){
+            digitalWrite(led_1,1);
+            digitalWrite(led_2,1);
+            digitalWrite(led_3,0);
+          }else if(command==71){
+            digitalWrite(led_1,1);
+            digitalWrite(led_2,1);
+            digitalWrite(led_3,1);
+
+          }
+        }
+    }
+    receiver.resume();
+}
+
+/*Push Button'a basarken ledi yakıp bırakınca ledi söndüren C++ kodu*/
+
+int button=7;
+int led=6;
+
+void setup()
+{
+  pinMode(button, INPUT);
+  pinMode(led, OUTPUT);
+  
+}
+
+void loop()
+{
+  
+  if(digitalRead(button)==1){
+    
+    digitalWrite(led,1);
+    
+  }else{
+    digitalWrite(led,0);
+  }
+}
+
+/*Ledleri Push Buttona basılıyken sırasıyla basılı değilkende aynı anda yakıp söndüren C++ kodu*/
+
+int button=10;
+
+void setup()
+{
+  for(int i=9;i>=2;i--){
+    pinMode(i,OUTPUT);
+  }
+  pinMode(button,INPUT);
+}
+
+void loop()
+{
+  if(digitalRead(button)==1){
+    
+   for(int i=9;i>=2;i--){
+   	digitalWrite(i,1);
+    delay(50);
+    digitalWrite(i,0);
+  }
+    
+    for(int i=2;i<=9;i++){
+   	digitalWrite(i,1);
+    delay(50);
+    digitalWrite(i,0);
+  }
+    
+  }else{
+    for(int i=9;i>=2;i--){
+   	    digitalWrite(i,0);
+  }
+    delay(500);
+    
+    for(int i=9;i>=2;i--){
+   	    digitalWrite(i,1);
+  }
+  }
 }
