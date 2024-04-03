@@ -645,3 +645,34 @@ void loop()
   }
   }
 }
+
+/*Push Button ile basarken soldan sağa basmıyorken sağdan sola akan led C++ kodu*/
+
+int button = 13;
+
+void setup()
+{
+  for(int i=12;i>=9;i--){
+    pinMode(i,OUTPUT);
+  }
+  pinMode(button,INPUT);
+}
+
+void loop()
+{
+  if(digitalRead(button)==1){
+    
+   for(int i=12;i>=9;i--){
+   	digitalWrite(i,1);
+    delay(200);
+    digitalWrite(i,0);
+   }
+    
+  }else{
+    for(int i=9;i<=12;i++){
+   	digitalWrite(i,1);
+    delay(200);
+    digitalWrite(i,0);
+   }
+  }
+}
