@@ -66,35 +66,35 @@
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/051238e1-8b73-4af3-ab32-35bb49f28989" width="450">
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/206740c7-e045-4f33-bcdd-4c9185c7580c" width="550">
 
-##  Ardunio uygulaması
+## Potansiyometreye göre servo motoru döndüren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/77f4d273-34ad-4047-aea8-0fe17d1c7fb0" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/77ad740d-851c-4bab-b926-a3beac0947f9" width="550">
 
-##  Ardunio uygulaması
+## Mesafe sensörüne göre RGB de renk değiştiren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/83329c31-b880-4920-b273-bcf5b9965823" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/40e59711-be2b-4a11-b7f2-14c62fbfeb27" width="550">
 
-##  Ardunio uygulaması
+## Remote Control Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/bb4cc9a8-325c-4da3-acc7-61758ebd7719" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/e25a59c4-ccc8-4919-82f8-26df167f8009" width="550">
 
-##  Ardunio uygulaması
+## Remote Controlde basılan tuşa göre led yakıp söndüren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/bad6afeb-7d3f-4941-8159-8c2faff07e61" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/97b6ade4-edcc-47d0-afc0-a3d9265cac27" width="550">
 
-##  Ardunio uygulaması
+## Push Button'a basarken ledi yakıp bırakınca ledi söndüren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/870105ca-1790-4658-aa35-d3ca408a3c87" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/3eb995db-5075-442f-addd-79dc46c7dcfa" width="550">
 
-##  Ardunio uygulaması
+## Ledleri Push Buttona basılıyken sırasıyla basılı değilkende aynı anda yakıp söndüren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/8035250d-9467-4a1c-9ff3-649f10830b6c" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/cb6e8fc2-5784-495a-853b-542a278a10ad" width="550">
 
 ##  Ardunio uygulaması
 
