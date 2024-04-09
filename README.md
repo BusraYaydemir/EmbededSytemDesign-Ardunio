@@ -139,7 +139,9 @@ Cathode - Anode +
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/416779ef-4131-4ec0-a1af-6220cf743b79" width="200">
 
 * Elektrik enerjisini kısa süreli depolamaya yarayan bir alettir. Pil gibi düşünülebilir.
-* + ve - kutupları vardır.
+* .+ ve - kutupları vardır.
 * Elektrik akımının dengesiz olduğu ortamlarda kullanılır. Buna regülasyon düzeltme deniyor.
+* Şarz aletlerinde kullanılıyor. Elektrikte yalpalanma olsa bile telefon gibi aletler bundan etkilenmiyor.
+* Modeme reset atarken 10sn bekleme kuralı kondansitörün içindeki enerjinin bitmesi içindir. Enerjisi bittikten sonra resetler
 
 
