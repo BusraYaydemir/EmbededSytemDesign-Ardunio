@@ -1,6 +1,8 @@
 # _**Embeded System Design with Ardunio**_
 
 Bu reporsitory de ilk önce temel devre elemanları tanıyıp sonrada ardunio ile uygulamalarını göreceğiz. 
+> [!NOTE]
+> Ardunio ile devre örnekleri için [buraya](https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/blob/main/allCodes.md) tıklayınız. 
 
 ## _1- Voltage - Resistance - Current (Gerilim - Direnç - Akım)_
 
