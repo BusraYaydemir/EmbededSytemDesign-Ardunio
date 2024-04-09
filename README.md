@@ -110,7 +110,7 @@ Cathode - Anode +
 
 ## _10- Hobby Gearmotor (Redüktörlü Motor)_
 
-<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/937d5359-f156-4d2e-9dc2-e444f4add5d2" width="200">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/937d5359-f156-4d2e-9dc2-e444f4add5d2" width="100">
 
 * Bu motorun alt tarafında da DC Motor vardır. DC motorun tüm özelliklerini taşır.
 * Üst tarafında ise bir dişli mekanizması vardır. Bu ise elde edilen hareketin daha yavaş ama daha güçlü olmasını sağlıyor.
@@ -118,7 +118,7 @@ Cathode - Anode +
 
   ## _11- Servo Motor_
 
-<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/200ad1e4-25f1-4aa0-a8cf-01c0bf088a01" width="200">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/200ad1e4-25f1-4aa0-a8cf-01c0bf088a01" width="100">
 
 * Bu motorun içinde DC Motor vardır.
 * Açısal hareket yapabilen bir motordur.
@@ -130,18 +130,28 @@ Cathode - Anode +
 
   ## _12- Vibration Motor (Titreşim Motoru)_
 
-<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/4ecbf674-4248-47d9-b67d-033d30e5b8de" width="200">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/4ecbf674-4248-47d9-b67d-033d30e5b8de" width="100">
 
 * Dönme hareketi değil titreşim hareketi yapar.
 
   ## _13- Capacitor (Kondansatör)_
 
-<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/416779ef-4131-4ec0-a1af-6220cf743b79" width="200">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/864afa8b-e0c5-4721-b61f-9fcdf9e6b89b" width="300">
 
 * Elektrik enerjisini kısa süreli depolamaya yarayan bir alettir. Pil gibi düşünülebilir.
-* .+ ve - kutupları vardır.
 * Elektrik akımının dengesiz olduğu ortamlarda kullanılır. Buna regülasyon düzeltme deniyor.
 * Şarz aletlerinde kullanılıyor. Elektrikte yalpalanma olsa bile telefon gibi aletler bundan etkilenmiyor.
-* Modeme reset atarken 10sn bekleme kuralı kondansitörün içindeki enerjinin bitmesi içindir. Enerjisi bittikten sonra resetler
+* Modeme reset atarken 10sn bekleme kuralı kondansitörün içindeki enerjinin bitmesi içindir. Enerjisi bittikten sonra resetler.
+* 2 tip kondanstör vardır. Yönlü (Polarized capacitor) ve yönsüz (capacitor). Yönsüz olanda + ve - kısımları yoktur. Yönlü olanda çizginin olduğu kısım -, olmadığı kısım ise +'dır.
 
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/ccacde10-2e2d-4185-8905-c18155f0f0fc" width="300">
 
+  ## _13- Inductor (Bobin)_
+
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/1a46bf39-6a9a-4715-8309-a83246908afc" width="200">
+
+* Birimi Henri (H)'dir.
+* Bobin bir nüve etrafına sarılan bir telden oluşur.
+* Bobini kondanstörün tersi olarak düşünebiliriz. Kondanstörler gerilim depolarken bobinler akım depolar.
+
+  <img src="" width="200">
