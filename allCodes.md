@@ -103,8 +103,8 @@
 
 ##  Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/3ec34702-317c-4cbd-93d2-31a50aaa5925" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/bcceca88-0124-463d-a168-c27bdde0ed8f" width="550">
 
 ##  Ardunio uygulaması
 
