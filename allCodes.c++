@@ -676,3 +676,240 @@ void loop()
    }
   }
 }
+
+/*Ultrasonic mesafe sensöründeki uzaklığı LCD ekrana yazan C++ kodu*/
+
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(32,16,2);
+
+#define trigger 5
+#define echo 6
+
+void setup()
+{
+  pinMode(trigger,OUTPUT);
+  pinMode(echo,INPUT);
+  lcd.init();
+  lcd.backlight();
+  lcd.clear();
+}
+
+void loop()
+{
+  digitalWrite(trigger,LOW);
+  delayMicroseconds(2);
+  
+  digitalWrite(trigger,HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigger,LOW);
+  
+  float time=pulseIn(echo,HIGH);
+  float distance=time*(0.01715);
+  
+  lcd.setCursor(0,0);
+  lcd.print("Distance:");
+  lcd.setCursor(0,1);
+  lcd.print(distance);
+  lcd.print(" cm");
+  delay(500);
+}
+
+/*Keypadden girilen şifre doğru ise servo motoru 90 derece döndüren C++ kodu*/
+
+#include <Servo.h>
+#include <Keypad.h>
+
+
+byte rowPins[]={9,8,7,6};
+byte columnPins[]={5,4,3,2};
+
+char keys[4][4]={{'1','2','3','A'},{'4','5','6','B'},
+{'7','8','9','C'},{'*','0','#','D'}};
+
+Keypad keypad=Keypad(makeKeymap(keys),rowPins,columnPins,4,4);
+
+Servo myServo;
+
+char inputs[6];
+char password[]="12345";
+
+int i=0;
+
+void setup()
+{
+  Serial.begin(9600);
+  myServo.attach(11);
+}
+
+void loop()
+{
+  
+  char keyPressed=keypad.getKey();
+  
+  if(keyPressed){
+    
+   Serial.println(keyPressed); 
+   inputs[i]=keyPressed;
+   Serial.println(inputs);
+    i++;
+    if(i==5){
+      if(strcmp(inputs,password)==0){
+        Serial.println("Password is right");
+        myServo.write(90);
+        delay(5000);
+        myServo.write(0);
+      }else{
+        Serial.println("Password is wrong");
+        myServo.write(0);
+      }
+      i=0;
+      memset(inputs,0,6);
+    }
+    
+  }
+}
+
+
+/*7 Segment Display de 9 dan geriye sayı sayan C++ Kodu*/
+
+int number=9;
+
+void setup()
+{
+  for(int pin=2;pin<9;pin++){
+  pinMode(pin, OUTPUT);
+  }
+}
+
+void showNumber(int number){
+  switch(number){
+   case 0:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,1);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,0);//G
+    break;
+    case 1:
+    digitalWrite(2,0);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,0);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,0);//F
+    digitalWrite(8,0);//G
+    break;
+    case 2:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,0);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,1);//E
+    digitalWrite(7,0);//F
+    digitalWrite(8,1);//G
+    break;
+    case 3:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,0);//F
+    digitalWrite(8,1);//G
+    break;
+    case 4:
+    digitalWrite(2,0);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,0);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,1);//G
+    break;
+    case 5:
+    digitalWrite(2,1);//A
+    digitalWrite(3,0);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,1);//G
+    break;
+    case 6:
+    digitalWrite(2,1);//A
+    digitalWrite(3,0);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,1);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,1);//G
+    break;
+    case 7:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,0);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,0);//F
+    digitalWrite(8,0);//G
+    break;
+    case 8:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,1);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,1);//G
+    break;
+    case 9:
+    digitalWrite(2,1);//A
+    digitalWrite(3,1);//B
+    digitalWrite(4,1);//C
+    digitalWrite(5,1);//D
+    digitalWrite(6,0);//E
+    digitalWrite(7,1);//F
+    digitalWrite(8,1);//G
+    break;
+  }
+}
+
+void loop()
+{  
+  showNumber(number);
+  delay(1000);
+  number--;
+  if (number==-1){
+   number=9; 
+  }
+}
+
+/*7 Segment Display de 0-1-2-3 sayan C++ kodu*/
+
+int number=0;
+
+void setup()
+{
+  DDRD=B11111111;
+}
+
+void loop()
+{
+  if (number==0){
+    PORTD=0x3F;//B00111111 or 63
+  }else if (number==1){
+    PORTD=B00000110;
+  }else if( number==2){
+   PORTD=B01011011; 
+  }else if(number==3){
+  	PORTD=B01001111;
+  }
+  delay(1000);
+  number++;
+  if (number==4){
+    number=0;
+  }
+}
