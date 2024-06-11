@@ -101,25 +101,25 @@
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/a588e422-9550-42dd-9e3d-b4dd548d3889" width="450">
 <img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/4ff5afaa-b5dd-48c8-9502-5abc90e3632a" width="550">
 
-##  Ardunio uygulaması
+##  Ultrasonic mesafe sensöründeki mesafeyi LCD ekranda gösteren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/3ec34702-317c-4cbd-93d2-31a50aaa5925" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/bcceca88-0124-463d-a168-c27bdde0ed8f" width="550">
 
-##  Ardunio uygulaması
+## Keypedden girilen şifre doğruysa servo motoru 90 derece döndüren Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/42b9577b-7010-4ffc-bfdb-b55fe0b73d98" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/38d8b681-ba51-479b-be7b-b0155b0e9223" width="550">
 
-##  Ardunio uygulaması
+## 7 Segment Display de 9 dan geriye sayı sayan Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/7ba2847b-4c1a-42eb-8b67-5a69db0be417" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/0f47d962-dbb5-4a97-bef1-c67b05006175" width="550">
 
-##  Ardunio uygulaması
+## 7 Segment Display de 0-1-2-3 sayan Ardunio uygulaması
 
-<img src="" width="450">
-<img src="" width="550">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/870110b1-d1ec-4176-84e7-827a059b64ce" width="450">
+<img src="https://github.com/BusraYaydemir/EmbededSytemDesign-Ardunio/assets/147690122/bc310e31-0946-4134-a867-667915008a10" width="550">
 
 ##  Ardunio uygulaması
 
